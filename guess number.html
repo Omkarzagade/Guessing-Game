@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body class="bg-primary">
+    <div class="container-fluid ">
+        <h2 class="bg-info my-4 py-2 text-center">Guess The Number</h2>
+        <div class="text-center py-2 text-bg-warning">
+            <p>Guess what? Number between 1 and 100 <br>You got 10 Chances, show your Luck!!</p>
+        </div>
+        <div class="my-3 py-2 ">
+            <h1 class="text-center bg-info">Enter Number</h1>
+            <div style="width:50%; margin-left: 25%;">
+                <form class="input-group">
+                    <input type="text" id="uip" class="form-control">
+                    <input type="submit" id="sbtn" class="btn btn-dark btn-outline-light" value="Submit">
+                </form>
+            </div>
+            <div id="stat" style="width:50%; margin-left: 25%;">
+                <br>Previous Guesses: <span id="Guesses"></span><br>
+                Guesses Remaining: <span id="remain">10</span>
+                <h2 class="text-center"><span id="suggest"></span></h2>
+                <div class="text-center" style="font-size:50px;"><span id="new"></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="guessnumber.js"></script>
+</body>
+
+</html>
